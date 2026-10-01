@@ -14,16 +14,16 @@ header {
   justify-content: space-between;
   align-items: center; 
   height: 100px;
-  width: 100%;
   background-color: #864127;
   color: white;
-  padding: 20px 100px;
+  padding: 20px clamp(16px, 5vw, 100px);
 }
 
 .navig {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 0 20px;
 }
 
 nav {
@@ -36,6 +36,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 0 20px;
 }
 
 a {
@@ -84,42 +85,57 @@ button {
 }
 
 .container {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   align-items: center;
-  margin: 50px 200px;
+  padding: 50px 0;
+  width: 100%;
   gap: 50px;
 }
 
 .block {
   display: flex;
-  width: 100%;
-  height: 500px;
+  width: 90%;
+  min-height: 500px;        
   border-radius: 30px;
   background-color: #EAB985;
-  box-sizing: border-box;
   overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.block .text {
+  text-align: center;
 }
 
 .block img {
-  flex: 1.2;
+  flex: 1 1 300px;
+  width: 50%;
+  min-width: 300px;
   object-fit: cover;
+  height: auto;
+}
+
+.block .text {
+  flex: 1 1 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .block p {
-  flex: 1;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
-.block .left-img {
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);  
-  background-color: #EAB985;
-}
-
-.block .right-img {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);  
-  background-color: #EAB985;
+.block h1 {
+  font-family: "Caveat", cursive;
+  color: #864127;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 footer {
@@ -130,7 +146,7 @@ footer {
   width: 100%;
   background-color: #864127;
   color: white;
-  padding: 50px 200px;
+  padding: 50px clamp(16px, 5vw, 100px);
 }
 
 footer div {
