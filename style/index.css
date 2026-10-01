@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: black;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   width: 100%;
   background-color: #864127;
   color: white;
-  padding: 0 100px;
+  padding: 20px 100px;
 }
 
 .navig {
@@ -37,12 +38,12 @@ nav {
   gap: 10px;
 }
 
-header a {
+a {
   color: white;
   text-decoration: none;
 }
 
-header a.link:hover {
+a.link:hover {
   color: #ffe4c4;
   text-decoration: none;
 }
@@ -54,22 +55,21 @@ header h1 {
   color: #EAB985;
 }
 
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
 .login-button {
-  width: 90px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 10px;
   border: 2px solid #EAB985;
   background-color: #864127;
   color: #EAB985;
 }
 
 .signup-button {
-  width: 90px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 10px;
-  border: 2px solid ;
+  border: 2px solid;
   background-color: #EAB985;
   color: #864127;
 }
@@ -81,4 +81,60 @@ header h1 {
 .login-button:hover {
   border-color: #ffe4c4;
   color: #ffe4c4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 200px;
+  gap: 50px;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+  background-color: #EAB985;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.block img {
+  flex: 1.2;
+  object-fit: cover;
+}
+
+.block p {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.block .left-img {
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);  
+  background-color: #EAB985;
+}
+
+.block .right-img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);  
+  background-color: #EAB985;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 100%;
+  background-color: #864127;
+  color: white;
+  padding: 50px 200px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
