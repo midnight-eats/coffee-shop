@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
   font-family: "Comfortaa", sans-serif;
   margin: 0;
@@ -19,7 +29,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 500px;
-  min-width: 500px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 50px 20px;
   background-color: #EAB985;
@@ -34,7 +44,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 500px;
-  min-width: 500px;
+  min-width: 300px;
   gap: 20px;
 }
 
@@ -62,7 +72,7 @@ input.text::placeholder {
 }
 
 input.text:focus {
-  outline: none !important;
+  outline: none;
 }
 
 button {
